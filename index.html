@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal - Miguel Angel Restrepo Sierra</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 2em;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #000;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #5b1313;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      margin: 20px 0;
+      line-height: 1.8;
+    }
+
+    .info a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .skills, .languages {
+      margin: 25px 0;
+      text-align: left;
+    }
+
+    .skills ul, .languages ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills li, .languages li {
+      background: #000;
+      color: #fff;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.9em;
+    }
+
+    .projects {
+      margin: 30px 0;
+    }
+
+    .projects a {
+      display: inline-block;
+      background-color: #0073e6;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .projects a:hover {
+      background-color: #005bb5;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0073e6;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+
+
+
+    @media (max-width: 900px) {
+      header {
+        font-size: 1.8em;
+        padding: 25px 0;
+      }
+
+      .container {
+        width: 95%;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      .skills li, .languages li {
+        font-size: 0.85em;
+        padding: 7px 12px;
+      }
+    }
+
+    
+    @media (max-width: 600px) {
+      body {
+        justify-content: flex-start;
+        padding-top: 20px;
+      }
+
+      header {
+        font-size: 1.5em;
+        padding: 20px 10px;
+      }
+
+      .container {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+
+      .info {
+        font-size: 0.9em;
+      }
+
+      .skills {
+        text-align: center;
+      }
+
+      .skills li, .languages li {
+        display: block;
+        width: fit-content;
+        margin: 8px auto;
+        font-size: 0.85em;
+      }
+
+      input, textarea {
+        width: 100%;
+      }
+
+      button {
+        width: 80%;
+      }
+
+      footer {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+    }
+
+    
+    @media (max-width: 400px) {
+      header {
+        font-size: 1.3em;
+      }
+
+      h1 {
+        font-size: 1.3em;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>MI PORTAFOLIO PERSONAL</header>
+
+  <div class="container">
+    <img src="https://static.vecteezy.com/system/resources/previews/002/275/847/non_2x/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" alt="Foto Profesional" class="profile-img">
+    <h1>Miguel Angel Restrepo Sierra</h1>
+    <h2>Desarrollador de Software</h2>
+
+    <div class="info">
+       <b>Ubicación:</b> Medellín, Colombia <br>
+       <b>Correo:</b> <a href="mailto:legionario310705@gmail.com">legionario310705@gmail.com</a> <br>
+       <b>Teléfono:</b> +57 304 444 7933 <br>
+       <b>LinkedIn:</b> <a href="https://linkedin.com" target="_blank">linkedin.com</a> <br>
+       <b>GitHub:</b> <a href="https://github.com" target="_blank">github.com</a> <br>
+       <b>Experiencia:</b> junior
+    </div>
+
+    <div class="skills">
+      <h3>Habilidades</h3>
+      <ul>
+        <li>Trabajo en equipo</li>
+        <li>Comunicación efectiva</li>
+        <li>Resolución de problemas</li>
+        <li>Gestión de proyectos</li>
+      </ul>
+    </div>
+
+    <div class="projects">
+      <h3>Proyectos y Portafolio</h3>
+      <p>Puedes ver mis proyectos completos en mi perfil de GitHub.</p>
+      <a href="https://github.com" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <form>
+      <h3>Contáctame</h3>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+     2025 Miguel angel | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
